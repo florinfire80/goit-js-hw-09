@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Face ca containerul să ocupe întreaga înălțime a ecranului */
+  margin: 0 auto;
+}
+
+.pages-list {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#go-back-link {
+  position: absolute;
+  top: 10px; /* Distanța de la partea de sus a ecranului */
+  left: 10px; /* Distanța de la partea stângă a ecranului */
+  text-decoration: none; /* Eliminăm sublinierea */
+  font-weight: bold;
+  color: #007bff; /* Culorea link-ului */
+  cursor: pointer;
+  transition: color 0.3s; /* Adăugăm o tranziție pentru schimbarea culorii la hover */
+}
+#go-back-link:hover {
+  color: #0056b3; /* Schimbăm culoarea la hover */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.btn,
+#datetime-btn {
+  width: 80px;
+  height: 40px;
+  font-size: 1.5rem; /* Mărim fontul butonului */
+  margin: 0;
+  background-color: #007bff; /* Schimbăm culoarea de fundal */
+  color: #fff; /* Schimbăm culoarea textului la alb */
+  border: none; /* Eliminăm conturul butonului */
+  border-radius: 5px; /* Adăugăm un border radius pentru un aspect ușor încadrat */
+  cursor: pointer; /* Cursor pointer la interacțiune */
+  transition: background-color 0.3s, color 0.3s; /* Adăugăm o tranziție pentru schimbarea culorilor la hover */
+  text-align: center;
+}
+.btn:hover,
+#datetime-btn:hover,
+button[type='submit']:hover {
+  background-color: #0056b3; /* Schimbăm culoarea de fundal la hover */
+}
+
+#datetime-picker {
+  margin-bottom: 20px; /* Spațiere între selectorul de dată și butonul "Start" */
+  text-align: center;
+  border: red solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Spațiere între elementele timer-ului */
+}
+.field {
+  text-align: center;
+}
+.value {
+  font-size: 2rem; /* Dimensiunea fontului pentru valoarea zilelor, orelor, minutelor și secundelor */
+  font-weight: bold;
+}
+.label {
+  font-size: 1rem; /* Dimensiunea fontului pentru etichetele "Days", "Hours", "Minutes" și "Seconds" */
+}
+
+input {
+  margin-bottom: 20px; /* Spațiere între selectorul de dată și butonul "Start" */
+  text-align: center;
+  border: red solid;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+}
+label {
+  font-weight: 400px;
+  font-size: 20px;
+}
+input[type='number'] {
+  font-weight: bold;
+  font-size: 30px;
+}
+button[type='submit'] {
+  width: 250px;
+  height: 40px;
+  font-size: 1.5rem; /* Mărim fontul butonului */
+  margin: 0;
+  background-color: #007bff; /* Schimbăm culoarea de fundal */
+  color: #fff; /* Schimbăm culoarea textului la alb */
+  border: none; /* Eliminăm conturul butonului */
+  border-radius: 5px; /* Adăugăm un border radius pentru un aspect ușor încadrat */
+  cursor: pointer; /* Cursor pointer la interacțiune */
+  transition: background-color 0.3s, color 0.3s; /* Adăugăm o tranziție pentru schimbarea culorilor la hover */
+  text-align: center;
+}
